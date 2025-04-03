@@ -5,11 +5,11 @@
         public string Modelo { get; set; }
         public string Marca { get; set; }
         public int Ano { get; set; }
-        
-        public int Dias { get; set; }
-       
 
-         public Veiculo (string modelo, string marca, int ano, int dias)
+        public int Dias { get; set; }
+
+
+        public Veiculo(string modelo, string marca, int ano, int dias)
         {
             Modelo = modelo;
             Marca = marca;
@@ -17,12 +17,12 @@
             Dias = dias;
         }
 
-        public virtual decimal Calculardiaria(decimal diaria,int dias)
+        public virtual decimal Calculardiaria(decimal diaria, int dias)
         {
-           return  diaria * dias;
+            return diaria * dias;
         }
-        
-            
-        
+
+
+
     }
 }

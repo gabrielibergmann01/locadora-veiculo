@@ -11,7 +11,7 @@ namespace Sistema_Veiculos
             {
                 Console.WriteLine("-------Locadora de veículos-------");
 
-                Console.WriteLine("Qual modelo deseja alugar?");
+                Console.WriteLine("Qual nome do veículo que deseja alugar?");
                 string modelo = Console.ReadLine();
 
                 Console.WriteLine("Qual a marca?");
@@ -24,7 +24,7 @@ namespace Sistema_Veiculos
                 int dias = int.Parse(Console.ReadLine());
 
                 Console.WriteLine("""
-                Qual tipo de veículo deseja?\n
+                Qual é o tipo do veículo?
                 1 - Carro
                 2 - Moto
                 3 - Caminhão
@@ -61,7 +61,7 @@ namespace Sistema_Veiculos
 
             foreach (Veiculo veiculo in Lista)
             {
-                Console.WriteLine($"Modelo: {veiculo.Modelo}\n Marca: {veiculo.Marca}\n Ano: {veiculo.Ano}, Dias alugados: {veiculo.Dias}, Total: {veiculo.Calculardiaria(diaria,dias)}");
+                Console.WriteLine($" Modelo: {veiculo.Modelo}\n Marca: {veiculo.Marca}\n Ano: {veiculo.Ano}\n Dias alugados: {veiculo.Dias}\n Total: {veiculo.Calculardiaria(diaria,dias):F2} R$");
             }
            
            } catch (Exception ex)
